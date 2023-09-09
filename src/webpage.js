@@ -13,9 +13,9 @@ function createNav() {
     const rightNav = document.createElement("div")
     rightNav.classList.add("right-nav")
 
-    const aboutBtn = document.createElement("button")
-    aboutBtn.classList.add("about-btn")
-    aboutBtn.textContent = "About us"
+    const homeBtn = document.createElement("button")
+    homeBtn.classList.add("home-btn")
+    homeBtn.textContent = "Home"
 
     const menuBtn = document.createElement("button")
     menuBtn.classList.add("menu-btn")
@@ -25,7 +25,7 @@ function createNav() {
     contactBtn.classList.add("contact-btn")
     contactBtn.textContent = "Contact"
 
-    rightNav.appendChild(aboutBtn)
+    rightNav.appendChild(homeBtn)
     rightNav.appendChild(menuBtn)
     rightNav.appendChild(contactBtn)
 
@@ -35,8 +35,43 @@ function createNav() {
     return nav
 }
  
+function createMain(){
+    const mainCont = document.createElement("div")
+    mainCont.classList.add("main-content")
+
+    const mainImg = document.createElement("img")
+    mainImg.src = "/src/images/restaurant-img.jpg"
+    mainImg.alt = "Restaurant"
+
+    const restName = document.createElement("h1")
+    restName.textContent = "Fancy Burger"
+
+    const headline = document.createElement("h2")
+    headline.classList.add("headline")
+    headline.textContent = "Where real burgers are made!"
+
+    mainCont.appendChild(mainImg)
+    mainCont.appendChild(restName)
+    mainCont.appendChild(headline)
+
+    return mainCont
+}
+
+function createFooter() {
+    const footer = document.createElement("footer")
+    footer.classList.add("footer")
+
+    const footerPara = document.createElement("p")
+    footerPara.textContent = `Copyright © ${new Date().getFullYear()} CMFernandes`
+    
+    footer.appendChild(footerPara)
+
+    return footer
+}
 export function webpageInit() {
     const content = document.querySelector("#content")
     content.appendChild(createNav())
+    content.appendChild(createMain())
+    content.appendChild(createFooter())
 
 }
