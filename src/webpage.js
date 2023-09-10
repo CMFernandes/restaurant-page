@@ -1,3 +1,5 @@
+import displayHome from "./home";
+
 function createNav() {
     const nav = document.createElement("div")
     nav.classList.add("navbar")
@@ -14,15 +16,18 @@ function createNav() {
     rightNav.classList.add("right-nav")
 
     const homeBtn = document.createElement("button")
-    homeBtn.classList.add("home-btn")
+    homeBtn.classList.add("home")
+    homeBtn.classList.add("btn")
     homeBtn.textContent = "Home"
 
     const menuBtn = document.createElement("button")
-    menuBtn.classList.add("menu-btn")
+    menuBtn.classList.add("menu")
+    homeBtn.classList.add("btn")
     menuBtn.textContent = "Menu"
 
     const contactBtn = document.createElement("button")
-    contactBtn.classList.add("contact-btn")
+    contactBtn.classList.add("contact")
+    homeBtn.classList.add("btn")
     contactBtn.textContent = "Contact"
 
     rightNav.appendChild(homeBtn)
@@ -31,28 +36,13 @@ function createNav() {
 
     nav.appendChild(leftNav)
     nav.appendChild(rightNav)
-    
+
     return nav
 }
  
 function createMain(){
     const mainCont = document.createElement("div")
     mainCont.classList.add("main-content")
-
-    const mainImg = document.createElement("img")
-    mainImg.src = "/src/images/restaurant-img.jpg"
-    mainImg.alt = "Restaurant"
-
-    const restName = document.createElement("h1")
-    restName.textContent = "Fancy Burger"
-
-    const headline = document.createElement("h2")
-    headline.classList.add("headline")
-    headline.textContent = "Where real burgers are made!"
-
-    mainCont.appendChild(mainImg)
-    mainCont.appendChild(restName)
-    mainCont.appendChild(headline)
 
     return mainCont
 }
@@ -68,10 +58,12 @@ function createFooter() {
 
     return footer
 }
+
 export function webpageInit() {
     const content = document.querySelector("#content")
     content.appendChild(createNav())
     content.appendChild(createMain())
     content.appendChild(createFooter())
 
+    displayHome()
 }
