@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Italiana&family=Roboto&display=swap');
+
+:root{
+    --logo-color: #fed9b2;
+    --nav-color: #1c2a33;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: #163949;
+    font-family:'Italiana', sans-serif;;
+}
+
+.restaurant-name,.headline-cont h1{
+    font-family:'Italiana',serif;
+    color: var(--logo-color);
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: var(--nav-color);
+    justify-content: space-between;
+
+}
+
+button{
+    background-color: var(--nav-color);
+    color: var(--logo-color);
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 8px;
+    position: relative;
+    
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--logo-color);
+    transform: scale(0.1, 1);
+}
+
+button:hover::before {
+    transform: scale(1, 1); 
+}
+
+  
+.restaurant-name{
+    margin-left: 5rem;
+    font-size: 2.5rem;
+}
+
+.right-nav{
+    margin-right: 10rem;
+    display: flex;
+    gap: 5rem;
+}
+.home{
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+}
+
+.home img{
+    width: 400px;
+
+}
