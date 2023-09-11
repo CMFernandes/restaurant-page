@@ -16,18 +16,15 @@ function createNav() {
     rightNav.classList.add("right-nav")
 
     const homeBtn = document.createElement("button")
-    homeBtn.classList.add("home")
-    homeBtn.classList.add("btn")
+    homeBtn.classList.add("homeBtn")
     homeBtn.textContent = "Home"
 
     const menuBtn = document.createElement("button")
-    menuBtn.classList.add("menu")
-    homeBtn.classList.add("btn")
+    menuBtn.classList.add("menuBtn")
     menuBtn.textContent = "Menu"
 
     const contactBtn = document.createElement("button")
-    contactBtn.classList.add("contact")
-    homeBtn.classList.add("btn")
+    contactBtn.classList.add("contactBtn")
     contactBtn.textContent = "Contact"
 
     rightNav.appendChild(homeBtn)
