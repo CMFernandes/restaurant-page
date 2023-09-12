@@ -6,12 +6,12 @@ function createHome(){
     const homeImgCont = document.createElement("div");
     homeImgCont.classList.add("home-img-cont")
 
-    const mainImg = document.createElement("img");
-    mainImg.src = "/src/images/restaurant-img.jpg";
+    const mainImg = document.createElement("img"); 
+    mainImg.src = "/src/images/restaurant-img.jpg"; 
     mainImg.alt = "Restaurant";
 
     homeImgCont.appendChild(mainImg)
-
+    
     const headlineCont  = document.createElement("div");
     headlineCont.classList.add("headline-cont")
 

@@ -9,7 +9,13 @@ body{
     margin:0;
     padding: 0;
     background-color: #163949;
-    font-family:'Italiana', sans-serif;;
+    font-family:'Italiana', sans-serif;
+}
+
+#content{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
 }
 
 .restaurant-name,.headline-cont h1{
@@ -23,7 +29,6 @@ body{
     align-items: center;
     background-color: var(--nav-color);
     justify-content: space-between;
-
 }
 
 button{
@@ -55,7 +60,11 @@ button:hover::before {
     transform: scale(1, 1); 
 }
 
-  
+footer{
+    text-align: center;
+    color: var(--logo-color);
+    font-size: 1.2rem;
+}
 .restaurant-name{
     margin-left: 5rem;
     font-size: 2.5rem;
@@ -66,13 +75,42 @@ button:hover::before {
     display: flex;
     gap: 5rem;
 }
+
+
 .home{
-    display: flex;
+    display:flex ;
     flex-direction: row-reverse;
-    color: white;
 }
 
-.home img{
-    width: 400px;
+.home-img-cont{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
 
+}
+
+.home-img-cont img{
+    height: auto;
+    
+    padding-top: 5%;
+}
+
+.headline-cont{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headline-cont h1{
+    font-size: 6rem;
+    margin-top: 200px;
+    color: var(--logo-color);
+    padding: 90px;
+    border: 1px solid var(--logo-color);
+}
+
+.headline-cont h2{
+    font-size: 2rem;
+    color:var(--logo-color);
 }
