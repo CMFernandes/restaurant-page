@@ -9,7 +9,7 @@ function createMenuCard(name, ingredient, src){
     ingredients.textContent = ingredient;
 
     const foodImg = document.createElement("img")
-    foodImg.src = `/dist/images/${src}.jpg`;
+    foodImg.src = `images/${src}.jpg`;
 
     menuCard.appendChild(foodName);
     menuCard.appendChild(ingredients);
