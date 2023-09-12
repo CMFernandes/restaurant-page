@@ -20,15 +20,21 @@ function createMenuCard(name, ingredient, src){
 
 function createMenu(){
     const menu = document.createElement("div");
+    menu.classList.add("menu")
 
     const menuTitle = document.createElement("h1");
     menuTitle.textContent = "Menu";
 
+    const menuCards = document.createElement("div")
+    menuCards.classList.add("menu-cards")
+
+    menuCards.appendChild(createMenuCard("Ultimate Burger", "Patty, cheddar cheese, lettuce, bacon, secret sauce and fried onions.","ultimate"))
+    menuCards.appendChild(createMenuCard("Premium Burger","Patty, caramelised red onions, white sauce, cream cheese and bacon.", "premium"))
+    menuCards.appendChild(createMenuCard("Cheesy Burguer","Patty, cheddar cheese, cheese sauce and onions.","cheese"))
+    menuCards.appendChild(createMenuCard("Fries","Just the best homemade french fries.","fries"))
+    
     menu.appendChild(menuTitle);
-    menu.appendChild(createMenuCard("Ultimate Burger", "Patty, cheddar cheese, lettuce, bacon, secret sauce and fried onions.","ultimate"))
-    menu.appendChild(createMenuCard("Premium Burger","Patty, caramelised red onions, white sauce, cream cheese and bacon.", "premium"))
-    menu.appendChild(createMenuCard("Cheesy Burguer","Patty, cheddar cheese, cheese sauce and onions.","cheese"))
-    menu.appendChild(createMenuCard("Fries","Just the best homemade french fries.","fries"))
+    menu.appendChild(menuCards);
     
     return menu
 }
