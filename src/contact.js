@@ -12,7 +12,7 @@ function createContact() {
     contactCont.classList.add("contact-container");
 
     const contactImg = document.createElement("img");
-    contactImg.src = "/src/images/contact-img.png";
+    contactImg.src = "/dist/images/contact-img.png";
     contactImg.alt = "Maps view";
 
     const contactAdress = document.createElement("p");
