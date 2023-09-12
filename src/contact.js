@@ -2,6 +2,15 @@ function createContact() {
     const contact = document.createElement("div");
     contact.classList.add("contact");
 
+    const contactTitleCont = document.createElement("div");
+    const contactTitle = document.createElement("h1");
+    contactTitle.textContent = "Contact";
+
+    contactTitleCont.appendChild(contactTitle);
+
+    const contactCont = document.createElement("div");
+    contactCont.classList.add("contact-container");
+
     const contactImg = document.createElement("img");
     contactImg.src = "/src/images/contact-img.png";
     contactImg.alt = "Maps view";
@@ -12,10 +21,13 @@ function createContact() {
     const contactPhone = document.createElement("p");
     contactPhone.textContent = " 📞 568 965 255 ";
 
-    contact.appendChild(contactImg);
-    contact.appendChild(contactAdress);
-    contact.appendChild(contactPhone);
+    contactCont.appendChild(contactImg);
+    contactCont.appendChild(contactAdress);
+    contactCont.appendChild(contactPhone);
 
+    contact.appendChild(contactTitleCont);
+    contact.appendChild(contactCont)
+    
     return contact
 }
 
