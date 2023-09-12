@@ -114,3 +114,54 @@ footer{
     font-size: 2rem;
     color:var(--logo-color);
 }
+
+.menu-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+
+.menu{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--logo-color);
+}
+
+.menu-cards h2{
+    font-size: 2rem;
+    color: var(--logo-color);
+}
+.menu-cards p{
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+.menu-cards img{
+    max-width: 100%;
+    height: auto;;
+}
+
+.menu-card{
+    padding: 20px;
+    border: 1px solid var(--logo-color);
+    width: 25%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact div h1{
+    font-size: 3.5rem;
+    color: var(--logo-color);
+}
+.contact p {
+    color: var(--logo-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
