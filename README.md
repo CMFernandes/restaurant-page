@@ -9,9 +9,13 @@
 
 
 ## About
-The objective of this project was to utilize webpack to build a multi-page Restaurant website and dynamically render all of its contents.
 
-The main purpose of this project was to practice:
+The primary goal of this project was to develop a multi-page Restaurant website using webpack, focusing on implementing ES6 modules for better code organization and leveraging webpack for bundling assets. 
+
+Additionally, all contents of the website were dynamically rendered.
+
+
+Topics:
 - ES6 modules
 - webpack
 - DOM manipulation
