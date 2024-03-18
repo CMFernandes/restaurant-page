@@ -1,3 +1,5 @@
+import restaurantImage from "./images/restaurant-img.jpg";
+
 function createHome(){
 
     const home = document.createElement("div")
@@ -7,7 +9,7 @@ function createHome(){
     homeImgCont.classList.add("home-img-cont")
 
     const mainImg = document.createElement("img"); 
-    mainImg.src = "images/restaurant-img.jpg"; 
+    mainImg.src = restaurantImage; 
     mainImg.alt = "Restaurant";
 
     homeImgCont.appendChild(mainImg)
